@@ -1,3 +1,86 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* HOME PAGE */
+.home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 95vh;
+}
+
+.home-header .home-left {
+    width: 40%;
+    height: 80%;
+    border: 3px solid whitesmoke;
+    border-radius: 50%;
+}
+
+.home-header .home-right {
+    background-color: whitesmoke;
+    width: 30%;
+    height: 60%;
+    border-radius: 50%;
+    /* border: 6px solid red; */
+    margin-left: -150px;
+    padding: 50px;
+}
+
+.home-header .home-right h1{
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 32px;
+    color: #A22C4E;
+}
+
+.home-header .home-right h4 {
+    padding-top: 4px;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 22px;
+}
+
+.home-header .home-right p {
+    padding-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.home-content1 {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.home-content1 .content1-left {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+
+.home-content1 .content1-left h1 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+}
+
+.home-content1 .content1-left hr {
+    width: 90%;
+    height: 2px;
+    border: none;
+    margin: 10px 0;
+    background-color: #A22C4E;
+}
+
+.home-content1 .content1-left p {
+    padding-top: 8px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.home-content1 .content1-right {
+    margin: 50px 100px;
+    width: 30%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: black;
+}
