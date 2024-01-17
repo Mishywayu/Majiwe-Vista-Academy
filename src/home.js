@@ -1,4 +1,5 @@
 import React from "react";
+import Carousel from "./components/carousel";
 
 export default function Home() {
   return (
@@ -30,28 +31,48 @@ export default function Home() {
             education, the academy places a strong emphasis on individualized
             learning. Students at Majiwe Vista are encouraged to explore their
             interests, while dedicated teachers adapt their to cater to each
-            student's specific needs. 
+            student's specific needs.
             <br />
             <br />
-            In addition to its academic focus, the
-            academy embraces a student-centric environment with generous recess
-            times and a less stressful, more balanced overall approach to
-            education. This intentional focus on student well-being has been
-            linked to high levels of happiness among students and remarkable
-            academic achievements. 
+            In addition to its academic focus, the academy embraces a
+            student-centric environment with generous recess times and a less
+            stressful, more balanced overall approach to education. This
+            intentional focus on student well-being has been linked to high
+            levels of happiness among students and remarkable academic
+            achievements.
             <br />
             <br />
-            Majiwe Vista Academy, with its fusion of
-            Kenyan and South African educational practices, stands out as a
-            beacon of quality education, providing a nurturing and enriching
-            environment for students to thrive.
+            Majiwe Vista Academy, with its fusion of Kenyan and South African
+            educational practices, stands out as a beacon of quality education,
+            providing a nurturing and enriching environment for students to
+            thrive.
           </p>
         </div>
         <div className="content1-right"></div>
       </div>
 
       {/* CAROUSEL DIV */}
-      
+      <Carousel />
+
+      {/* ICONS DIV */}
+      <div className="home-icons">
+        <div>
+          <img src="/images/diversity.png" alt="" />
+          <h3>Diversity</h3>
+        </div>
+        <div>
+          <img src="/images/active.png" alt="" />
+          <h3>Active</h3>
+        </div>
+        <div>
+          <img src="/images/open-mind.png" alt="" />
+          <h3>Open-minded</h3>
+        </div>
+        <div>
+          <img src="/images/trust.png" alt="" />
+          <h3>Trustworthy</h3>
+        </div>
+      </div>
     </div>
   );
 }

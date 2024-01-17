@@ -1,9 +1,7 @@
 import React from "react";
 import './App.css';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Home from "./home";
-import Carousel from "./components/carousel";
-// import About from "./about";
+import About from "./about";
 // import Curriculumn from "./curriculumn";
 // import Careers from "./careers";
 // import Contact from "./contact";
@@ -11,8 +9,7 @@ import Carousel from "./components/carousel";
 export default function App() {
   return (
     <div className="App">
-      <Carousel />
-      {/* <Home /> */}
+      <About />
       {/* <Router>
         <nav className="flex items-center justify-center p-4">
           {/* LOGO */}
