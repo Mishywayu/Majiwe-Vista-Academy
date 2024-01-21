@@ -3,6 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="about-container">
+      {/* HEADER */}
       <div className="about-header">
         <div className="about-left"></div>
         <div className="about-right">
@@ -33,9 +34,65 @@ export default function About() {
               students feel inspired, challenged, and empowered to reach their
               highest aspirations . . . .
             </p>
-            <h2>Khadeeja Shabaana, <span>( Principal )</span></h2>
+            <h2>
+              Khadeeja Shabaana, <span>( Principal )</span>
+            </h2>
             <button>About Our Principal</button>
           </div>
+        </div>
+      </div>
+
+      {/* EXPERIENCE DIV */}
+      <div className="experience-container">
+        <div className="experience-left">
+          <h2>40 Years of Experience</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Ipsum ac elit venenatis
+            auctor tellus feugiat in. Purus scelerisque velit facilisis a.
+            Viverra at eleifend magna felis in at tristique. Vestibulum diam
+            pellentesque non nunc at. Proin tellus id aliquam neque dignissim.
+            Elit enim elit diam tempus urna. Nunc sed a lectus a sit. Et arcu
+            orci fringilla vitae sapien vestibulum.
+            <br />
+            <br />
+            Faucibus vivamus risus ut purus bibendum lobortis egestas purus.
+            Cursus egestas etiam suscipit morbi duis sem. Mauris ullamcorper
+            rhoncus libero sit a facilisi. Pellentesque eget donec amet
+            venenatis felis eleifend scelerisque mi. Tincidunt quis molestie
+            amet tincidunt diam quis feugiat dolor. Facilisis sed etiam diam
+            quis sodales pretium lacus gravida purus. Eleifend orci.
+            <br />
+            <br />
+            Purus scelerisque velit facilisis a. Viverra at eleifend magna felis
+            in at tristique. Vestibulum diam pellentesque non nunc at. Proin
+            tellus id aliquam neque dignissim. Elit enim elit diam tempus urna.
+            Nunc sed a lectus a sit. Et arcu orci fringilla vitae sapien
+            vestibulum.
+          </p>
+        </div>
+        <div className="experience-right"></div>
+      </div>
+
+      {/* DEPUTY DIV */}
+      <div className="deputy-container">
+        <div className="deputy-left"></div>
+        <div className="deputy-right">
+          <h2>Meet Our Deputy</h2>
+          <hr />
+          <p>
+            <span>Olivia Henderson</span>, the steadfast leader at
+            Majiwe Vista Academy. With a wealth of experience in education and a
+            genuine passion for nurturing young minds, Ms. Henderson plays a
+            pivotal role in shaping the academic landscape of the academy. Her
+            approachable demeanor and unwavering commitment to fostering a
+            supportive learning environment have earned her the respect and
+            admiration of both students and colleagues alike. Known for her
+            innovative ideas and dedication to academic excellence, Deputy
+            Principal Henderson works collaboratively with the teaching staff to
+            implement progressive educational strategies. Under her guidance,
+            Majiwe Vista Academy continues to thrive as a hub of knowledge,
+            curiosity, and personal growth.
+          </p>
         </div>
       </div>
     </div>

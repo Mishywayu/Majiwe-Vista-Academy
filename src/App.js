@@ -1,15 +1,13 @@
 import React from "react";
 import './App.css';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import About from "./about";
-// import Curriculumn from "./curriculumn";
-// import Careers from "./careers";
+import Careers from "./careers";
 // import Contact from "./contact";
 
 export default function App() {
   return (
     <div className="App">
-      <About />
+      <Careers />
       {/* <Router>
         <nav className="flex items-center justify-center p-4">
           {/* LOGO */}

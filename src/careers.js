@@ -5,6 +5,5 @@ export default function Careers() {
     <div>
       <h1>Careers page</h1>
     </div>
-  )
+  );
 }
-
