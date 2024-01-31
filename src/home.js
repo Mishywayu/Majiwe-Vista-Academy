@@ -1,7 +1,39 @@
-import React from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
+// import ReactDOM from "react-dom";
 import Carousel from "./components/carousel";
 
 export default function Home() {
+  const [show, doShow] = useState({
+    itemOne: false,
+    itemTwo: false,
+    itemThree: false,
+  });
+
+  const ourRef = useRef(null),
+    anotherRef = useRef(null),
+    refThree = useRef(null);
+
+  useLayoutEffect(() => {
+    const topPos = (element) => element.getBoundingClientRect().top;
+    const h1Pos = topPos(ourRef.current),
+      hrPos = topPos(anotherRef.current),
+      pPos = topPos(refThree.current);
+
+    const onScroll = () => {
+      const scrollPos = window.scrollY + window.innerHeight;
+      if (h1Pos < scrollPos) {
+        doShow((state) => ({ ...state, itemOne: true }));
+      } else if (hrPos < scrollPos) {
+        doShow((state) => ({ ...state, itemTwo: true }));
+      } else if (pPos < scrollPos) {
+        doShow((state) => ({ ...state, itemThree: true }));
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onscroll);
+  }, []);
+
   return (
     <div className="home-container">
       {/* HOME HEADER */}
@@ -9,7 +41,6 @@ export default function Home() {
         <div className="home-left"></div>
         <div className="home-right">
           <h1>WELCOME</h1>
-          <h4>Majiwe Vista Academy</h4>
           <p>
             We are a learning community dedicated to inspiring success and
             nurturing well-being, education excellence is at the heart of all we
@@ -22,9 +53,29 @@ export default function Home() {
       {/* SECOND DIV */}
       <div className="home-content1">
         <div className="content1-left">
-          <h1>Welcome to Majiwe Vista Academy</h1>
-          <hr />
-          <p>
+          <h1
+            style={{
+              transform: `translateX(${show.itemOne ? "0" : "-100vw"})`,
+              transition: "transform 1s",
+            }}
+            ref={ourRef}
+          >
+            Welcome to Majiwe Vista Academy
+          </h1>
+          <hr
+            // style={{
+            //   transform: `translateX(${show.itemTwo ? "0" : "-100vw"})`,
+            //   transition: "transform 1s",
+            // }}
+            ref={anotherRef}
+          />
+          <p
+            // style={{
+            //   transform: `translateX(${show.itemThree ? "0" : "-100vw"})`,
+            //   transition: "transform 1s",
+            // }}
+            ref={refThree}
+          >
             Majiwe Vista Academy stands as a distinguished international school
             in Kneya, uniquely combining elements from both the Kenyan and South
             Africa education systems. Recognized for its innovative approach to

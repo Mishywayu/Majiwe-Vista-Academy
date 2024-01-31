@@ -1,8 +1,62 @@
+/* NAV */
+.text {
+  position: relative;
+  overflow: hidden;
+}
+
+.text::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #feb404;
+  transition: width 0.3s ease;
+}
+
+.text:hover::before {
+  width: 100%;
+}
+
+.contact-btn {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  background-color: #0095c8;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #feb404;
+  transition: all .3s;
+  z-index: -1;
+}
+
+.contact-btn:hover {
+  color: white;
+  &::before {
+    width: 100%;
+  }
+}
+
+
 /* HOME PAGE */
 .home-header,
 .about-header,
 .curriculumn-header,
-.careers-header {
+.careers-header,
+.contact-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +68,8 @@
 .home-header .home-left,
 .about-header .about-left,
 .curriculumn-header .curriculumn-left,
-.careers-header .careers-left {
+.careers-header .careers-left,
+.contact-header .contact-left {
   width: 40%;
   height: 80%;
   border: 3px solid whitesmoke;
@@ -25,7 +80,8 @@
 .home-header .home-right,
 .about-header .about-right,
 .curriculumn-header .curriculumn-right,
-.careers-header .careers-right {
+.careers-header .careers-right,
+.contact-header .contact-right {
   background-color: whitesmoke;
   width: 30%;
   height: 60%;
@@ -34,8 +90,8 @@
   padding: 50px;
 }
 
-.home-header .home-right,
-.about-header .about-right,
+.home-header .home-right h1,
+.about-header .about-right h1,
 .curriculumn-header .curriculumn-right h1 {
   text-align: center;
   font-family: "Philosopher", sans-serif;
@@ -43,30 +99,28 @@
   color: #a22c4e;
 }
 
-.home-header .home-right h4 {
-  padding-top: 4px;
-  text-align: center;
-  font-family: "Philosopher", sans-serif;
-  font-size: 22px;
+.home-header .home-right h1 {
+  padding-top: 22px;
 }
 
 .home-header .home-right p {
-  padding-top: 8px;
+  color: black;
+  padding-top: 18px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
 }
 
 .home-content1 {
   display: flex;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
 }
 
 .home-content1 .content1-left {
   width: 50%;
   height: 100%;
-  padding: 30px;
+  padding: 30px 80px;
 }
 
 .home-content1 .content1-left h1 {
@@ -75,8 +129,8 @@
 }
 
 .home-content1 .content1-left hr {
-  width: 90%;
-  height: 2px;
+  width: 100%;
+  height: 3px;
   border: none;
   margin: 10px 0;
   background-color: #a22c4e;
@@ -90,7 +144,7 @@
 
 .home-content1 .content1-right {
   margin: 50px 100px;
-  width: 30%;
+  width: 35%;
   height: 80%;
   border-radius: 50%;
   background-color: black;
@@ -612,4 +666,139 @@
   font-size: 14px;
   background-color: #a22c4e;
   color: white;
+}
+
+
+/* CONTACT PAGE */
+.form-div .p {
+  padding: 120px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  font-size: 20px;
+  color: #004c65;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  padding: 30px;
+}
+
+.form-left {
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+  padding-top: 0;
+}
+
+.form-left h1 {
+  font-size: 35px;
+  font-family: "Philosopher", sans-serif;
+  color: #a22c4e;
+}
+
+.form-left hr {
+  width: 35%;
+  height: 5px;
+  border: none;
+  margin: 10px 0;
+  background-color: #366e83;
+}
+
+.form-left span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-left p {
+  padding-top: 12px;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: left;
+}
+
+.form-right {
+  width: 50%;
+  height: 100%;
+  padding: 25px;
+}
+
+.form-right label {
+  font-size: 18px;
+  font-weight: 200;
+  color: #828282;
+}
+
+.form-right input, textarea {
+  width: 100%;
+  padding: 7px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #366e83;
+}
+
+.form-right textarea {
+  padding: 30px;
+}
+
+.form-right button {
+  width: 200px;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background-color: #004c65;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.map-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 60vh;
+}
+
+/* .map-content {
+  background-color: #e06287;
+  width: 90%;
+  height: 90%;
+} */
+
+
+/* FOOTER PAGE  */
+.footer-container {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  padding: 0px 60px;
+}
+
+.footer-container .socials, .about, .curriculumn, .contact {
+  width: 25%;
+  height: 100%;
+}
+
+.footer-container .about, .curriculumn, .contact {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.footer-container .socials {
+  padding-top: 30px;
+}
+
+.footer-container .socials .social-icons {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+
+.about h3, .curriculumn h3, .contact h3 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
