@@ -1,7 +1,7 @@
 import React from "react";
-import MapComponent from "./components/map";
 
 export default function Contact() {
+
   return (
     <div className="contact-container">
       {/* HEADER */}
@@ -66,9 +66,7 @@ export default function Contact() {
       </div>
 
       {/* MAP */}
-      <div className="map-area">
-        {/* <MapComponent /> */}
-      </div>
+      <div className="map-area"></div>
     </div>
   );
 }

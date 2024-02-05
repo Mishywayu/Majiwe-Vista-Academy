@@ -7,6 +7,7 @@ import Curriculumn from "./curriculumn";
 import Careers from "./careers";
 import Contact from "./contact";
 import Footer from "./components/footer";
+import Principal from "./components/principal";
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/curriculumn" element={<Curriculumn />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/principal" element={<Principal />} />
         </Routes>
       </Router>
 

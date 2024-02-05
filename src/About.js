@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -37,7 +38,7 @@ export default function About() {
             <h2>
               Khadeeja Shabaana, <span>( Principal )</span>
             </h2>
-            <button>About Our Principal</button>
+            <Link to='/principal' className="button">About Our Principal</Link>
           </div>
         </div>
       </div>
@@ -94,6 +95,18 @@ export default function About() {
             curiosity, and personal growth.
           </p>
         </div>
+      </div>
+
+      {/* STUDENT LEADERS */}
+      <div className="student-leaders"></div>
+
+      {/* CONTACT US */}
+      <div className="contact-us">
+        <h2>Contact Is Today</h2>
+        <hr />
+        <p>Find out how we can develop your child's skills and expand their horizons for a life of success</p>
+        <br />
+        <Link to='/contact' className="contact-us-btn">ENQUIRE NOW</Link>
       </div>
     </div>
   );
