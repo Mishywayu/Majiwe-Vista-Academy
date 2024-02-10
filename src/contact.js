@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Map from "./components/map";
 
 export default function Contact() {
-
   return (
     <div className="contact-container">
       {/* HEADER */}
@@ -45,28 +46,34 @@ export default function Contact() {
           </div>
           <div className="form-right">
             <form>
-            <div className="name">
-              <label>Your Name*</label>
-              <input type="text" />
-            </div>
+              <div className="name">
+                <label>Your Name*</label>
+                <input type="text" />
+              </div>
 
-            <div className="email">
-              <label>Email*</label>
-              <input type="email" />
-            </div>
+              <div className="email pt-2">
+                <label>Email*</label>
+                <input type="email" />
+              </div>
 
-            <div className="message">
-              <label>Message*</label>
-              <textarea></textarea>
-            </div>
-            <button>Send Message</button>
+              <div className="message pt-2">
+                <label>Message*</label>
+                <textarea></textarea>
+              </div>
+              <Link to="" className="button rounded-3xl">
+                Send Message
+              </Link>
             </form>
           </div>
         </div>
       </div>
 
       {/* MAP */}
-      <div className="map-area"></div>
+      <div className="map-area">
+        <div className="map">
+          <Map />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Curriculumn() {
   return (
@@ -29,7 +30,7 @@ export default function Curriculumn() {
             exploration, while social studies cover a broad range of topics to
             cultivate global awareness . . . .
           </p>
-          <button>READ MORE</button>
+          <Link to='/junior' className="button">Read More</Link>
         </div>
         <div className="junior-right"></div>
       </div>
@@ -48,7 +49,7 @@ export default function Curriculumn() {
             needs of students as they approach the final years of their
             secondary education.
           </p>
-          <button>READ MORE</button>
+          <Link to='/senior' className="button">Read More</Link>
         </div>
       </div>
 
@@ -93,6 +94,20 @@ export default function Curriculumn() {
             </p>
           </div>
           <div className="grid-item-8 bg-red-300"></div>
+        </div>
+
+        {/* CONTACT US */}
+        <div className="contact-us">
+          <h2>Contact Is Today</h2>
+          <hr />
+          <p>
+            Find out how we can develop your child's skills and expand their
+            horizons for a life of success
+          </p>
+          <br />
+          <Link to="/contact" className="contact-us-btn">
+            ENQUIRE NOW
+          </Link>
         </div>
       </div>
     </div>

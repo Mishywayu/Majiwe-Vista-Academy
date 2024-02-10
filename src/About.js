@@ -38,7 +38,7 @@ export default function About() {
             <h2>
               Khadeeja Shabaana, <span>( Principal )</span>
             </h2>
-            <Link to='/principal' className="button">About Our Principal</Link>
+            <Link to='/principal' className="button rounded-3xl">About Our Principal</Link>
           </div>
         </div>
       </div>

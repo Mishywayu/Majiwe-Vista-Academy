@@ -11,12 +11,12 @@ export default function Home() {
         <div className="home-left"></div>
         <div className="home-right">
           <h1>WELCOME</h1>
-          <p>
+          {/* <p>
             We are a learning community dedicated to inspiring success and
             nurturing well-being, education excellence is at the heart of all we
             do because we believe that everyone deserves th best possible
             future.
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -53,35 +53,44 @@ export default function Home() {
       </div>
 
       {/* CAROUSEL DIV */}
-      <Carousel />
+      {/* <Carousel /> */}
 
-      {/* ICONS DIV */}
-      {/* <div className="home-icons">
-        <div>
-          <img src="/images/diversity.png" alt="" />
-          <h3>Diversity</h3>
+      {/* GRID ITEMS */}
+      <div className="icons">
+        <div className="students">
+          <h2>300+</h2>
+          <p>Students</p>
         </div>
-        <div>
-          <img src="/images/active.png" alt="" />
-          <h3>Active</h3>
+        <div className="staff">
+        <h2>45+</h2>
+          <p>Predaogical Staff</p>
         </div>
-        <div>
-          <img src="/images/open-mind.png" alt="" />
-          <h3>Open-minded</h3>
+        <div className="nationalities">
+        <h2>13+</h2>
+          <p>Nationalities</p>
         </div>
-        <div>
-          <img src="/images/trust.png" alt="" />
-          <h3>Trustworthy</h3>
+        <div className="educators">
+        <h2>20+</h2>
+          <p>Educatiors</p>
         </div>
-      </div> */}
+        <div className="ratio">
+        <h2>1 : 16</h2>
+          <p>Ration of esucators Per Students</p>
+        </div>
+      </div>
 
       {/* CONTACT US */}
       <div className="contact-us">
         <h2>Contact Is Today</h2>
         <hr />
-        <p>Find out how we can develop your child's skills and expand their horizons for a life of success</p>
+        <p>
+          Find out how we can develop your child's skills and expand their
+          horizons for a life of success
+        </p>
         <br />
-        <Link to='/contact' className="contact-us-btn">ENQUIRE NOW</Link>
+        <Link to="/contact" className="contact-us-btn">
+          ENQUIRE NOW
+        </Link>
       </div>
     </div>
   );

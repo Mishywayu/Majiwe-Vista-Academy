@@ -13,12 +13,12 @@ export default function App() {
   return (
     <div className="App">
       <Router>
-        <nav className="flex items-center justify-center">
+        <nav className="flex items-center justify-center fixed">
           {/* LOGO */}
           <img src="/images/Majiwe-logo.png" alt="Logo" className="w-48 mr-80" />
 
           {/* MENU ITEMS */}
-          <ul className="flex space-x-7 text-sm text-black">
+          <ul className="flex space-x-7 text-sm">
             <li className="pt-2 text">
               <Link to="/">HOME</Link>
             </li>
