@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
 
-const MapComponent = () => {
-  useEffect(() => {
-    // Initialize the map
-    const map = L.map('map').setView([51.505, -0.09], 13);
-
-    // Add OpenStreetMap tile layer
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors',
-    }).addTo(map);
-  }, []);
-
-  return <div id="map" style={{ height: '500px' }}></div>;
-};
-
-export default MapComponent;
+export default function Map() {
+  return (
+    <MapContainer center={[51.505, -0.09]} zoom={1} style={{ height: '60vh' }}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      />
+      <Marker position={[-1.2921, 36.8219]}>
+        <Popup>
+          <b>Majiwe Vista Academy, Kenya</b>
+        </Popup>
+      </Marker>
+    </MapContainer>
+  );
+}

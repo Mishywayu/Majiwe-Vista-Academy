@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Careers() {
   return (
@@ -8,29 +9,8 @@ export default function Careers() {
         <div className="careers-left"></div>
         <div className="careers-right">
           <h1>CAREERS</h1>
-          <p>We Learn Together</p>
         </div>
       </div>
-
-      {/* ICONS DIV */}
-      {/* <div className="home-icons">
-        <div>
-          <img src="/images/diversity.png" alt="" />
-          <h3>Diversity</h3>
-        </div>
-        <div>
-          <img src="/images/active.png" alt="" />
-          <h3>Active</h3>
-        </div>
-        <div>
-          <img src="/images/open-mind.png" alt="" />
-          <h3>Open-minded</h3>
-        </div>
-        <div>
-          <img src="/images/trust.png" alt="" />
-          <h3>Trustworthy</h3>
-        </div>
-      </div> */}
 
       {/* MILLICENT SHABAANA */}
       <div className="millicent-container">
@@ -69,7 +49,7 @@ export default function Careers() {
               and supportive team, and I value our attitude and willingness to
               grow as a team. We trust and respect each other.
             </p>
-            <button>Learn More</button>
+            <Link to='/hanna' className="button">Learn More</Link>
           </div>
         </div>
         <div className="others-right">
@@ -83,7 +63,7 @@ export default function Careers() {
               for the students, but also for teachers who are willing to develop
               themselves professionally"
             </p>
-            <button>Learn More</button>
+            <Link to='/tuuli' className="button">Learn More</Link>
           </div>
         </div>
       </div>
@@ -99,7 +79,7 @@ export default function Careers() {
           <br />
           We invite teachers who share our values to be part of the MVA learning community.
         </p>
-        <button>CLICK HERE TO EXPLORE JOB VACANCIES AT MVA</button>
+        <Link to='/vacancies' className="vacancies">CLICK HERE TO EXPLORE JOB VACANCIES AT MVA</Link>
       </div>
     </div>
   );

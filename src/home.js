@@ -1,39 +1,8 @@
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React from "react";
 // import ReactDOM from "react-dom";
-import Carousel from "./components/carousel";
+import { Link } from "react-router-dom";
 
 export default function Home() {
-  const [show, doShow] = useState({
-    itemOne: false,
-    itemTwo: false,
-    itemThree: false,
-  });
-
-  const ourRef = useRef(null),
-    anotherRef = useRef(null),
-    refThree = useRef(null);
-
-  useLayoutEffect(() => {
-    const topPos = (element) => element.getBoundingClientRect().top;
-    const h1Pos = topPos(ourRef.current),
-      hrPos = topPos(anotherRef.current),
-      pPos = topPos(refThree.current);
-
-    const onScroll = () => {
-      const scrollPos = window.scrollY + window.innerHeight;
-      if (h1Pos < scrollPos) {
-        doShow((state) => ({ ...state, itemOne: true }));
-      } else if (hrPos < scrollPos) {
-        doShow((state) => ({ ...state, itemTwo: true }));
-      } else if (pPos < scrollPos) {
-        doShow((state) => ({ ...state, itemThree: true }));
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onscroll);
-  }, []);
-
   return (
     <div className="home-container">
       {/* HOME HEADER */}
@@ -41,41 +10,21 @@ export default function Home() {
         <div className="home-left"></div>
         <div className="home-right">
           <h1>WELCOME</h1>
-          <p>
+          {/* <p>
             We are a learning community dedicated to inspiring success and
             nurturing well-being, education excellence is at the heart of all we
             do because we believe that everyone deserves th best possible
             future.
-          </p>
+          </p> */}
         </div>
       </div>
 
       {/* SECOND DIV */}
       <div className="home-content1">
         <div className="content1-left">
-          <h1
-            style={{
-              transform: `translateX(${show.itemOne ? "0" : "-100vw"})`,
-              transition: "transform 1s",
-            }}
-            ref={ourRef}
-          >
-            Welcome to Majiwe Vista Academy
-          </h1>
-          <hr
-            // style={{
-            //   transform: `translateX(${show.itemTwo ? "0" : "-100vw"})`,
-            //   transition: "transform 1s",
-            // }}
-            ref={anotherRef}
-          />
-          <p
-            // style={{
-            //   transform: `translateX(${show.itemThree ? "0" : "-100vw"})`,
-            //   transition: "transform 1s",
-            // }}
-            ref={refThree}
-          >
+          <h1>Welcome to Majiwe Vista Academy</h1>
+          <hr />
+          <p>
             Majiwe Vista Academy stands as a distinguished international school
             in Kneya, uniquely combining elements from both the Kenyan and South
             Africa education systems. Recognized for its innovative approach to
@@ -103,26 +52,55 @@ export default function Home() {
       </div>
 
       {/* CAROUSEL DIV */}
-      <Carousel />
+      {/* <Carousel /> */}
 
-      {/* ICONS DIV */}
-      <div className="home-icons">
-        <div>
-          <img src="/images/diversity.png" alt="" />
-          <h3>Diversity</h3>
+      {/* GRID ITEMS */}
+      <div className="icons bg-red-300">
+        <div className="students">
+          <img
+            src="/images/students.png"
+            alt=""
+            className="pl-20"
+          />
+          <h2 className="text-white text-center text-4xl">300+</h2>
+          <p className="text-white text-center">Students</p>
         </div>
-        <div>
-          <img src="/images/active.png" alt="" />
-          <h3>Active</h3>
+        <div className="staff">
+          <img src="/images/staff.png" alt="" className="pl-20" />
+          <h2 className="text-white text-center text-4xl">45+</h2>
+          <p className="text-white text-center">Predaogical Staff</p>
         </div>
-        <div>
-          <img src="/images/open-mind.png" alt="" />
-          <h3>Open-minded</h3>
+        <div className="nationalities">
+          <img src="/images/nationalities.png" alt="" className="pl-20" />
+          <h2 className="text-white text-center text-4xl">13+</h2>
+          <p className="text-white text-center">Nationalities</p>
         </div>
-        <div>
-          <img src="/images/trust.png" alt="" />
-          <h3>Trustworthy</h3>
+        <div className="educators">
+          <img src="/images/educators.png" alt="" className="pl-16" />
+          <h2 className="text-white text-center text-4xl">20+</h2>
+          <p className="text-white text-center">Educators</p>
         </div>
+        <div className="ratio">
+          <img src="/images/ratio.png" alt="" className="pl-20" />
+          <h2 className="text-white text-center text-4xl">1 : 16</h2>
+          <p className="text-white text-center">
+            Ration of esucators Per Students
+          </p>
+        </div>
+      </div>
+
+      {/* CONTACT US */}
+      <div className="contact-us">
+        <h2>Contact Is Today</h2>
+        <hr />
+        <p>
+          Find out how we can develop your child's skills and expand their
+          horizons for a life of success
+        </p>
+        <br />
+        <Link to="/contact" className="contact-us-btn">
+          ENQUIRE NOW
+        </Link>
       </div>
     </div>
   );
