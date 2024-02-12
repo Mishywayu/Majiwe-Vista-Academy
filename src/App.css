@@ -172,6 +172,7 @@ nav {
   background-size: cover;
 }
 
+
 /* CAROUSEL */
 .carousel-item {
   display: flex;
@@ -311,22 +312,27 @@ nav {
 
 .students {
   background-color: #e06287;
+  padding-top: 40px;
 }
 
 .staff {
   background-color: #0095c8;
+  padding-top: 40px;
 }
 
 .nationalities {
   background-color: #feb404;
+  padding-top: 40px;
 }
 
 .educators {
   background-color: #a22c4e;
+  padding-top: 40px;
 }
 
 .ratio {
    background-color: #366e83;
+   padding-top: 40px;
 }
 
 /* ABOUT PAGE */

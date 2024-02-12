@@ -1,6 +1,5 @@
 import React from "react";
 // import ReactDOM from "react-dom";
-import Carousel from "./components/carousel";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -56,26 +55,37 @@ export default function Home() {
       {/* <Carousel /> */}
 
       {/* GRID ITEMS */}
-      <div className="icons">
+      <div className="icons bg-red-300">
         <div className="students">
-          <h2>300+</h2>
-          <p>Students</p>
+          <img
+            src="/images/students.png"
+            alt=""
+            className="pl-20"
+          />
+          <h2 className="text-white text-center text-4xl">300+</h2>
+          <p className="text-white text-center">Students</p>
         </div>
         <div className="staff">
-        <h2>45+</h2>
-          <p>Predaogical Staff</p>
+          <img src="/images/staff.png" alt="" className="pl-20" />
+          <h2 className="text-white text-center text-4xl">45+</h2>
+          <p className="text-white text-center">Predaogical Staff</p>
         </div>
         <div className="nationalities">
-        <h2>13+</h2>
-          <p>Nationalities</p>
+          <img src="/images/nationalities.png" alt="" className="pl-20" />
+          <h2 className="text-white text-center text-4xl">13+</h2>
+          <p className="text-white text-center">Nationalities</p>
         </div>
         <div className="educators">
-        <h2>20+</h2>
-          <p>Educatiors</p>
+          <img src="/images/educators.png" alt="" className="pl-16" />
+          <h2 className="text-white text-center text-4xl">20+</h2>
+          <p className="text-white text-center">Educators</p>
         </div>
         <div className="ratio">
-        <h2>1 : 16</h2>
-          <p>Ration of esucators Per Students</p>
+          <img src="/images/ratio.png" alt="" className="pl-20" />
+          <h2 className="text-white text-center text-4xl">1 : 16</h2>
+          <p className="text-white text-center">
+            Ration of esucators Per Students
+          </p>
         </div>
       </div>
 
