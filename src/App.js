@@ -44,7 +44,7 @@ export default function App() {
           </button>
           {/* MENU ITEMS */}
           <ul className={`flex space-x-7 text-sm menu ${menuVisible ? "menu-visible" : ""}`}>
-            <li className="pt-2 text">
+            <li className="pt-2 text text-home">
               <Link to="/">HOME</Link>
             </li>
             <li className="pt-2 text">
@@ -56,7 +56,7 @@ export default function App() {
             <li className="pt-2 text">
               <Link to="/careers">CAREERS</Link>
             </li>
-            <li className="bg-white p-2 w-32 text-center rounded-3xl contact-btn">
+            <li className="p-2 w-32 text-center rounded-3xl contact-btn">
               <Link to="/contact">Enquire Now</Link>
             </li>
           </ul>

@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
+    <div>
     <div className="footer-container">
       <div className="socials">
         <img src="/images/Majiwe-logo.png" alt="Majiwe Vista Academy" />
@@ -109,6 +110,8 @@ export default function Footer() {
         <p>2851 Namanga Road,</p>
         <p className="mb-1">P.O.BOX 19282-00100</p>
       </div>
+    </div>
+    <div className="font-thin text-center mt-12">Made with ❤ by Michelle Muindi</div>
     </div>
   );
 }

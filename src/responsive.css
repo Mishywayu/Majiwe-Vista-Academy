@@ -1,49 +1,55 @@
 /* RESPONSIVENESS */
 @media only screen and (max-width: 768px) {
-/* NAVBAR */
-nav {
+  /* NAVBAR */
+  nav {
     flex-direction: column;
     align-items: flex-start;
-}
+    padding-left: 60px;
+  }
 
-.menu {
+  .menu {
     display: none;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: crimson;
     padding: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 10px 10px;
-    opacity: 0;
+    background-color: white;
     pointer-events: none;
     transition: opacity 0.3s ease;
-}
+  }
 
-.menu-btn {
+  .menu-btn {
     display: block;
-}
+    margin-left: 250px;
+  }
 
-.contact-btn {
+  .text-home {
+    padding-left: 27px;
+  }
+
+  .contact-btn {
     margin-top: 1rem;
-}
+  }
 
-.menu-visible {
-    display: flex;
+  .menu-visible {
+    display: block;
     opacity: 1;
     pointer-events: all;
-}
+  }
 
-/* FOOTER */
-.footer-container {
+  /* FOOTER */
+  .footer-container {
     flex-direction: column;
     height: auto;
     padding: 20px;
   }
 
-  .footer-container .socials, .about, .curriculumn, .contact {
+  .footer-container .socials,
+  .about,
+  .curriculumn,
+  .contact {
     width: 100%;
     height: auto;
     text-align: center;
@@ -57,8 +63,101 @@ nav {
     justify-content: center;
   }
 
-  .about h3, .curriculumn h3, .contact h3 {
+  .about h3,
+  .curriculumn h3,
+  .contact h3 {
     font-size: 16px;
+  }
+
+  /* HOME PAGE */
+  .home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-image: url('/public/images/home.jpeg');
+    background-position: 30%;
+    background-size: cover;
+  }
+
+  .home-header .home-left {
+    width: 70%;
+    height: 40%;
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border-right-color: transparent;
+  }
+
+  .home-header .home-right {
+    width: 35%;
+    height: 20%;
+    margin-left: -110px;
+    padding: 20px;
+  }
+
+  .home-header .home-right h1 {
+    font-size: 18px;
+    padding-top: 40px;
+  }
+
+  .home-content1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .home-content1 .content1-left {
+    width: 100%;
+    padding: 40px 40px;
+  }
+
+  .home-content1 .content1-right {
+    display: hidden;
+  }
+
+  .contact-us {
+    padding-top: 60px;
+  }
+
+  .contact-us hr {
+    margin: 20px 60px;
+  }
+
+  .icons {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .icons .students,
+  .icons .staff,
+  .icons .nationalities,
+  .icons .educators,
+  .icons .ratio {
+    width: 100%;
+    height: 20vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .icons .students,
+  .icons .staff,
+  .icons .nationalities,
+  .icons .educators,
+  .icons .ratio {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .icons .students img,
+  .icons .staff img,
+  .icons .nationalities img,
+  .icons .educators img,
+  .icons .ratio img {
+    margin-left: 90px;
   }
 
   /* ABOUT PAGE  */
@@ -68,14 +167,15 @@ nav {
     height: 80vh;
     margin: 0;
     padding: 0;
+    background-position: 30%;
   }
 
   .about-header .about-left {
-    width: 60%;
-    height: 35%;
+    width: 70%;
+    height: 40%;
   }
 
-  .about-header .about-right{
+  .about-header .about-right {
     width: 35%;
     height: 20%;
     padding: 20px;
@@ -86,28 +186,48 @@ nav {
     font-size: 18px;
   }
 
-  .about-principal h1{
+  .about-principal h1 {
     font-size: 20px;
     text-align: center;
   }
 
   .about-principal hr {
     display: flex;
-    margin-left: 70px;
+    margin-left: 90px;
   }
 
   .principal-container {
     display: block;
+    height: 90vh;
   }
 
   .about-principal .principal-left {
-    width: 100%;
-    height: 50%;
-    margin: 20px 0;
+    width: 60%;
+    height: 30%;
+    margin: 10px 80px;
   }
 
   .about-principal .principal-right {
-    padding-left: 30px; 
+    width: 100%;
+    height: 70%;
+    text-align: center;
+  }
+
+  .about-principal .principal-right p {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+
+  .about-principal .principal-right h2 {
+    margin-left: -30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-principal .principal-right button {
+    margin-left: 0px;
   }
 
   .experience-container,
@@ -122,7 +242,7 @@ nav {
   .deputy-container .deputy-right {
     width: 100%;
     height: 50%;
-    padding: 0 20px; 
+    padding: 0 20px;
     margin: 20px 0;
   }
 }

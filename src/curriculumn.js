@@ -98,7 +98,7 @@ export default function Curriculumn() {
 
         {/* CONTACT US */}
         <div className="contact-us">
-          <h2>Contact Is Today</h2>
+          <h2>Contact Us Today</h2>
           <hr />
           <p>
             Find out how we can develop your child's skills and expand their
