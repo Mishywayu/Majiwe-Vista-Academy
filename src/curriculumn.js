@@ -61,7 +61,7 @@ export default function Curriculumn() {
 
         {/* GRID */}
         <div className="grid-container">
-          <div className="grid-item-1 bg-red-300"></div>
+          <div className="grid-item-1"></div>
           <div className="grid-item grid-item-2">
             <h2>Individual timetables</h2>
             <p>
@@ -76,8 +76,8 @@ export default function Curriculumn() {
               learning environments.
             </p>
           </div>
-          <div className="grid-item-4 bg-red-300"></div>
-          <div className="grid-item-5 bg-red-300"></div>
+          <div className="grid-item-4"></div>
+          <div className="grid-item-5"></div>
           <div className="grid-item grid-item-6">
             <h2>Team teaching</h2>
             <p>
@@ -93,7 +93,7 @@ export default function Curriculumn() {
               students are also encourage to bring healthy lunch to the school
             </p>
           </div>
-          <div className="grid-item-8 bg-red-300"></div>
+          <div className="grid-item-8"></div>
         </div>
 
         {/* CONTACT US */}

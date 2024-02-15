@@ -161,7 +161,7 @@ nav {
 
 .contact-us {
   height: 50vh;
-  padding-top: 20px;
+  padding-top: 50px;
   background-color: #004c65;
   text-align: center;
   color: whitesmoke;
@@ -177,7 +177,7 @@ nav {
   width: 70%;
   height: 2px;
   border: none;
-  margin: 20px 160px;
+  margin: 20px 200px;
   background-color: white;
 }
 
@@ -460,7 +460,7 @@ nav {
 .junior-container .junior-left {
   width: 50%;
   height: 100%;
-  padding: 30px;
+  padding: 100px 60px;
   margin-left: 50px;
 }
 
@@ -468,12 +468,6 @@ nav {
   font-family: "Philosopher", sans-serif;
   font-size: 30px;
   padding-bottom: 10px;
-}
-
-.junior-container .junior-left p {
-  padding: 20px;
-  padding-left: 0;
-  padding-top: 0;
 }
 
 .junior-container .junior-right {
@@ -503,7 +497,7 @@ nav {
 .senior-container .senior-left {
   width: 30%;
   height: 90%;
-  margin-left: 100px;
+  margin-left: 160px;
   border-radius: 50%;
   border: 10px solid;
   border-left-color: white;
@@ -519,8 +513,8 @@ nav {
 .senior-container .senior-right {
   width: 50%;
   height: 100%;
-  padding-top: 0;
-  padding-left: 200px;
+  padding-top: 80px;
+  padding-left: 100px;
 }
 
 .senior-container .senior-right h2 {
@@ -529,16 +523,11 @@ nav {
   padding-bottom: 10px;
 }
 
-.senior-container .senior-right p {
-  padding: 20px;
-  padding-left: 0;
-  padding-top: 0;
-}
-
 .junior-container .junior-left .button,
 .senior-container .senior-right .button {
   display: inline-block;
   padding: 12px 15px;
+  margin-top: 30px;
   text-align: center;
   font-size: 14px;
   color: white;
@@ -574,7 +563,7 @@ nav {
 .typical-day .h1 {
   height: 17vh;
   text-align: center;
-  padding: 15px;
+  padding-top: 25px;
   font-size: 50px;
   font-weight: bolder;
   color: white;
@@ -881,7 +870,7 @@ nav {
 }
 
 .form-div .p {
-  padding: 50px 120px;
+  padding: 50px 120px;;
   font-size: 18px;
   font-weight: bold;
   color: #004c65;
@@ -890,7 +879,7 @@ nav {
 .form {
   display: flex;
   width: 100%;
-  height: 70vh;
+  height: 50%;
   padding: 0 120px;
 }
 
@@ -913,13 +902,13 @@ nav {
 }
 
 .form-left span {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .form-left p {
   padding-top: 12px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 200;
   text-align: left;
 }

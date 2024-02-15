@@ -56,7 +56,7 @@ export default function App() {
             <li className="pt-2 text">
               <Link to="/careers">CAREERS</Link>
             </li>
-            <li className="p-2 w-32 text-center rounded-3xl contact-btn">
+            <li className="bg-white p-2 w-32 text-center rounded-3xl contact-btn">
               <Link to="/contact">Enquire Now</Link>
             </li>
           </ul>
