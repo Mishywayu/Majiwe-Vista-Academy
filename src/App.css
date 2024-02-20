@@ -292,7 +292,7 @@ nav {
 .principal-container {
   display: flex;
   width: 100%;
-  height: 65vh;
+  height: 70vh;
 }
 
 .about-principal .principal-left {
@@ -313,8 +313,8 @@ nav {
 
 .about-principal .principal-right p {
   text-align: justify;
-  padding-top: 80px;
-  padding-right: 150px;
+  padding-top: 30px;
+  padding-right: 55px;
 }
 
 .about-principal .principal-right h2 {
@@ -364,8 +364,9 @@ nav {
 .experience-container {
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   padding: 0 60px;
+  margin-top: 30px;
 }
 
 .experience-left {
@@ -391,8 +392,9 @@ nav {
 .deputy-container {
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   padding: 0 60px;
+  margin-bottom: 20px;
 }
 
 .deputy-container .deputy-left {
@@ -454,13 +456,13 @@ nav {
 .junior-container {
   display: flex;
   width: 100%;
-  height: 60vh;
+  height: 75vh;
 }
 
 .junior-container .junior-left {
   width: 50%;
   height: 100%;
-  padding: 100px 60px;
+  padding: 70px 50px;
   margin-left: 50px;
 }
 
@@ -471,8 +473,8 @@ nav {
 }
 
 .junior-container .junior-right {
-  width: 30%;
-  height: 90%;
+  width: 35%;
+  height: 85%;
   margin-top: 50px;
   margin-left: 80px;
   border-radius: 50%;
@@ -490,14 +492,13 @@ nav {
 .senior-container {
   display: flex;
   width: 100%;
-  height: 60vh;
-  margin-top: 90px;
+  height: 75vh;
 }
 
 .senior-container .senior-left {
-  width: 30%;
-  height: 90%;
-  margin-left: 160px;
+  width: 35%;
+  height: 85%;
+  margin-left: 140px;
   border-radius: 50%;
   border: 10px solid;
   border-left-color: white;
@@ -527,7 +528,7 @@ nav {
 .senior-container .senior-right .button {
   display: inline-block;
   padding: 12px 15px;
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
   font-size: 14px;
   color: white;
@@ -1012,3 +1013,86 @@ nav {
 .about a, .curriculumn a, .contact p {
   color: #828282;
 }
+
+
+/* PRINCIPALS BIOGRAPHY PAGE */
+.principal-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 650px;
+}
+
+.principal-bio {
+  width: 80%;
+  height: 100%;
+  padding: 20px 0;
+  margin-top: 220px;
+}
+
+.principal-bio h1 {
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-size: 35px;
+}
+
+.principal-bio .bio {
+  text-align: center;
+  padding: 10px 270px;
+}
+
+.principal-bio hr {
+  width: 100%;
+  height: 3px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #366e83;
+}
+
+.principal-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60%;
+  padding-top: 50px;
+}
+
+.principal-profile .profile-left {
+  width: 30%;
+  height: 90%;
+  margin-bottom: 120px;
+  background-color: #feb404;
+  border-radius: 50%;
+}
+
+.principal-profile .profile-right {
+  width: 30%;
+  height: 90%;
+  margin-left: -240px;
+  border-radius: 50%;
+  background-image: url('/public/images/principal.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.biography h2 {
+  font-family: "Philosopher", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.biography p {
+  text-align: justify;
+  padding: 10px 70px;
+}
+
+.biography span {
+  font-size: 20px;
+}
+
+/* VACANCIES */

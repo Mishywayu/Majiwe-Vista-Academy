@@ -9,6 +9,7 @@ import Careers from "./careers";
 import Contact from "./contact";
 import Footer from "./components/footer";
 import Principal from "./components/principal";
+import Vacancies from "./components/vacancies";
 
 export default function App() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -69,6 +70,7 @@ export default function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/principal" element={<Principal />} />
+          <Route path="/vacancies" element={<Vacancies />} />
         </Routes>
       </Router>
 
