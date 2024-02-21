@@ -1,54 +1,64 @@
 /* RESPONSIVENESS */
 @media only screen and (max-width: 768px) {
-/* NAVBAR */
-nav {
+  /* NAVBAR */
+  nav {
     flex-direction: column;
     align-items: flex-start;
-}
+    padding-left: 60px;
+  }
 
-.menu {
+  .menu {
     display: none;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: crimson;
     padding: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 10px 10px;
-    opacity: 0;
+    background-color: white;
     pointer-events: none;
     transition: opacity 0.3s ease;
-}
-
-.menu-btn {
-    display: block;
-}
-
-.contact-btn {
-    margin-top: 1rem;
-}
-
-.menu-visible {
-    display: flex;
-    opacity: 1;
-    pointer-events: all;
-}
-
-/* FOOTER */
-.footer-container {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
   }
 
-  .footer-container .socials, .about, .curriculumn, .contact {
+  .menu-btn {
+    display: block;
+    margin-left: 250px;
+  }
+
+  .text-home {
+    padding-left: 27px;
+  }
+
+  .contact-btn {
+    margin-top: 1rem;
+  }
+
+  .menu-visible {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .footer-container .socials,
+  .about,
+  .curriculumn,
+  .contact {
     width: 100%;
     height: auto;
     text-align: center;
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  .contact div {
+    padding-left: 30px;
   }
 
   .footer-container .socials .social-icons {
@@ -57,8 +67,99 @@ nav {
     justify-content: center;
   }
 
-  .about h3, .curriculumn h3, .contact h3 {
+  .about h3,
+  .curriculumn h3,
+  .contact h3 {
     font-size: 16px;
+  }
+
+  /* HOME PAGE */
+  .home-header, .contact-header, .careers-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-position: 30%;
+  }
+
+  .home-header .home-left, .contact-header .contact-left, .careers-header .careers-left{
+    width: 70%;
+    height: 40%;
+    border: 8px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border-right-color: transparent;
+  }
+
+  .home-header .home-right, .contact-header .contact-right, .careers-header .careers-right {
+    width: 35%;
+    height: 20%;
+    margin-left: -110px;
+    padding: 20px;
+  }
+
+  .home-header .home-right h1, .contact-header .contact-right h1, .careers-header .careers-right h1 {
+    font-size: 18px;
+    padding-top: 35px;
+  }
+
+  .home-content1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .home-content1 .content1-left {
+    width: 100%;
+    padding: 40px 40px;
+  }
+
+  .home-content1 .content1-right {
+    display: hidden;
+  }
+
+  .contact-us {
+    padding-top: 60px;
+  }
+
+  .contact-us hr {
+    margin: 20px 60px;
+  }
+
+  .icons {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .icons .students,
+  .icons .staff,
+  .icons .nationalities,
+  .icons .educators,
+  .icons .ratio {
+    width: 100%;
+    height: 20vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .icons .students,
+  .icons .staff,
+  .icons .nationalities,
+  .icons .educators,
+  .icons .ratio {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .icons .students img,
+  .icons .staff img,
+  .icons .nationalities img,
+  .icons .educators img,
+  .icons .ratio img {
+    margin-left: 90px;
   }
 
   /* ABOUT PAGE  */
@@ -68,14 +169,15 @@ nav {
     height: 80vh;
     margin: 0;
     padding: 0;
+    background-position: 30%;
   }
 
   .about-header .about-left {
-    width: 60%;
-    height: 35%;
+    width: 70%;
+    height: 40%;
   }
 
-  .about-header .about-right{
+  .about-header .about-right {
     width: 35%;
     height: 20%;
     padding: 20px;
@@ -83,46 +185,227 @@ nav {
   }
 
   .about-header .about-right h1 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
-  .about-principal h1{
+  .about-principal h1 {
     font-size: 20px;
     text-align: center;
   }
 
   .about-principal hr {
     display: flex;
-    margin-left: 70px;
+    margin-left: 90px;
   }
 
   .principal-container {
     display: block;
+    height: 100vh;
   }
 
   .about-principal .principal-left {
-    width: 100%;
-    height: 50%;
-    margin: 20px 0;
+    width: 60%;
+    height: 27%;
+    margin: 10px 80px;
   }
 
   .about-principal .principal-right {
-    padding-left: 30px; 
+    width: 100%;
+    height: 70%;
+    text-align: center;
   }
 
-  .experience-container,
+  .about-principal .principal-right p {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+
+  .about-principal .principal-right h2 {
+    margin-left: 30px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .experience-container {
+    display: none;
+  }
+
   .deputy-container {
-    flex-direction: column;
+    display: none;
+  }
+
+  /* CURRICULUMN PAGE */
+  .curriculumn-header {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    background-position: 30%;
+  }
+
+  .curriculumn-header .curriculumn-left {
+    width: 70%;
+    height: 40%;
+  }
+
+  .curriculumn-header .curriculumn-right {
+    width: 35%;
+    height: 20%;
+    padding: 20px;
+    margin-left: -110px;
+  }
+
+  .curriculumn-header .curriculumn-right h1 {
+    font-size: 16px;
+    padding-top: 35px;
+    padding-left: 5px;
+  }
+
+  .junior-container {
+    display: block;
+    width: 100%;
     height: auto;
   }
 
-  .experience-left,
-  .experience-right,
-  .deputy-container .deputy-left,
-  .deputy-container .deputy-right {
+  .junior-container .junior-left {
     width: 100%;
-    height: 50%;
-    padding: 0 20px; 
-    margin: 20px 0;
+    padding: 0 40px;
+    margin: 0;
+  }
+
+  .junior-container .junior-left h2 {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 25px;
+  }
+
+  .junior-container .junior-left p {
+    text-align: justify;
+  }
+
+  .junior-container .junior-right {
+    display: none;
+  }
+
+  .senior-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .senior-container .senior-left {
+    display: none;
+  }
+
+  .senior-container .senior-right {
+    width: 100%;
+    padding: 20px 40px;
+    margin: 0;
+  }
+
+  .senior-container .senior-right h2 {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .senior-container .senior-right p {
+    text-align: justify;
+  }
+
+  .typical-day .h1{
+    height: 10vh;
+    padding-top: 2px;
+  }
+
+  .grid-container {
+    display: block;
+    height: 20%;
+  }
+
+  .grid-item-1, .grid-item-4, .grid-item-5, .grid-item-8 {
+    display: none;
+  }
+
+
+  /* CONTACT PAGE */
+  .form-div .p {
+    padding: 20px 30px;
+    font-size: 15px;
+  }
+
+  .form {
+    display: block;
+    padding: 0;
+  }
+
+  .form .form-left {
+    display: none;
+  }
+
+  .form .form-right {
+    width: 100%;
+    padding: 0 35px;
+  }
+
+  .map-area {
+    padding: 0;
+  }
+
+  /* CAREER PAGE  */
+  .millicent-container {
+    display: none;
+  }
+
+  .others-container {
+    display: none;
+  }
+
+  .opportunities-container {
+    padding: 0px;
+  }
+
+  .opportunities-container p {
+    padding: 30px 30px;
+  }
+
+  /* PRINCIPAL'S BIO PAGE */
+  .principal-page {
+    margin-bottom: 900px;
+  }
+
+  .principal-bio {
+    width: 100%;
+  }
+  .principal-bio h1 {
+    font-size: 25px;
+  }
+
+  .principal-bio .bio {
+    padding: 0px 25px;
+    font-size: 14px;
+  }
+
+  .principal-profile {
+    padding-top: 0;
+  }
+  
+  .principal-profile .profile-left {
+    display: none;
+  }
+  
+  .principal-profile .profile-right {
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    background-color: #a22c4e;
+    border-radius: 50%;
+  }
+
+  .biography p {
+    padding: 5px 30px;
+    font-size: 15px;
   }
 }

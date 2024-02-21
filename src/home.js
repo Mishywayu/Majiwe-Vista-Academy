@@ -51,11 +51,8 @@ export default function Home() {
         <div className="content1-right"></div>
       </div>
 
-      {/* CAROUSEL DIV */}
-      {/* <Carousel /> */}
-
       {/* GRID ITEMS */}
-      <div className="icons bg-red-300">
+      <div className="icons">
         <div className="students">
           <img
             src="/images/students.png"
@@ -91,7 +88,7 @@ export default function Home() {
 
       {/* CONTACT US */}
       <div className="contact-us">
-        <h2>Contact Is Today</h2>
+        <h2>Contact Us Today</h2>
         <hr />
         <p>
           Find out how we can develop your child's skills and expand their
