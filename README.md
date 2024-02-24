@@ -2,7 +2,7 @@ Here is an overview of the steps taken to build this school website, from design
 
 # Design Phase
 The designed phase was done by an amazing designer, and she use Figma.
-Link []
+Link [https://www.figma.com/file/BHROxIwf2TurF1LUCKzUD9/Majiwe-Vista-Academy?type=design&node-id=0%3A1&mode=dev&t=PO8yDyITcWjQfBVq-1]
 
 Here is what she did:
 ### Research and Planning: 
@@ -43,5 +43,3 @@ Emphasize the importance of continuously iterating and improving the website bas
 # Conclusion
 Building the school website involved a combination of design thinking, technical expertise, and continuous refinement. While React.js and vanilla CSS were initially chosen for their familiarity and flexibility, there's a clear recognition of the benefits of transitioning to Tailwind CSS for streamlined styling. The journey doesn't end with the initial development; it's an ongoing process of evolution and improvement to deliver the best possible experience to users. 
 There is a lot I need to cover in development. Software Development is a learning journey and I am in for it!
-
-
