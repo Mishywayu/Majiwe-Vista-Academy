@@ -38,7 +38,9 @@ export default function About() {
             <h2>
               Khadeeja Shabaana, <span>( Principal )</span>
             </h2>
-            <Link to='/principal' className="button rounded-3xl">About Our Principal</Link>
+            <Link to="/principal" className="button rounded-3xl">
+              About Our Principal
+            </Link>
           </div>
         </div>
       </div>
@@ -81,10 +83,10 @@ export default function About() {
           <h2>Meet Our Deputy</h2>
           <hr />
           <p>
-            <span>Olivia Henderson</span>, the steadfast leader at
-            Majiwe Vista Academy. With a wealth of experience in education and a
-            genuine passion for nurturing young minds, Ms. Henderson plays a
-            pivotal role in shaping the academic landscape of the academy. Her
+            <span>Olivia Henderson</span>, the steadfast leader at Majiwe Vista
+            Academy. With a wealth of experience in education and a genuine
+            passion for nurturing young minds, Ms. Henderson plays a pivotal
+            role in shaping the academic landscape of the academy. Her
             approachable demeanor and unwavering commitment to fostering a
             supportive learning environment have earned her the respect and
             admiration of both students and colleagues alike. Known for her
@@ -104,9 +106,14 @@ export default function About() {
       <div className="contact-us">
         <h2>Contact Us Today</h2>
         <hr />
-        <p>Find out how we can develop your child's skills and expand their horizons for a life of success</p>
+        <p>
+          Find out how we can develop your child's skills and expand their
+          horizons for a life of success
+        </p>
         <br />
-        <Link to='/contact' className="contact-us-btn">ENQUIRE NOW</Link>
+        <Link to="/contact" className="contact-us-btn">
+          ENQUIRE NOW
+        </Link>
       </div>
     </div>
   );

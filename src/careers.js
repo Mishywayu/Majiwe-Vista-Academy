@@ -45,11 +45,13 @@ export default function Careers() {
               Hanna Nomalanga, <span>Class Teacher Grade 3</span>
             </h2>
             <p>
-              I’m proud of our team. I and my two local colleagues make a great
-              and supportive team, and I value our attitude and willingness to
-              grow as a team. We trust and respect each other.
+              I&rsquo;m proud of our team. I and my two local colleagues make a
+              great and supportive team, and I value our attitude and
+              willingness to grow as a team. We trust and respect each other.
             </p>
-            <Link to='/hanna' className="button">Learn More</Link>
+            <Link to="/hanna" className="button">
+              Learn More
+            </Link>
           </div>
         </div>
         <div className="others-right">
@@ -59,11 +61,13 @@ export default function Careers() {
               Tuuli Moraa, <span>Class Teacher Grade 7</span>
             </h2>
             <p>
-              "I’m happy to be part of this community where learning is not only
-              for the students, but also for teachers who are willing to develop
-              themselves professionally"
+              I&rsquo;m happy to be part of this community where learning is not
+              only for the students, but also for teachers who are willing to
+              develop themselves professionally"
             </p>
-            <Link to='/tuuli' className="button">Learn More</Link>
+            <Link to="/tuuli" className="button">
+              Learn More
+            </Link>
           </div>
         </div>
       </div>
@@ -77,9 +81,12 @@ export default function Careers() {
           and well-being of children at the heart of our story.
           <br />
           <br />
-          We invite teachers who share our values to be part of the MVA learning community.
+          We invite teachers who share our values to be part of the MVA learning
+          community.
         </p>
-        <Link to='/vacancies' className="vacancies">CLICK HERE TO EXPLORE JOB VACANCIES AT MVA</Link>
+        <Link to="/vacancies" className="vacancies">
+          CLICK HERE TO EXPLORE JOB VACANCIES AT MVA
+        </Link>
       </div>
     </div>
   );
