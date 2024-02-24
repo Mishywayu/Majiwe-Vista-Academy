@@ -13,7 +13,7 @@ nav {
 }
 
 .text::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -29,7 +29,7 @@ nav {
   text-transform: uppercase;
   color: whitesmoke;
   background-color: #0095c8;
-  transition: all .3s;
+  transition: all 0.3s;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   margin-top: -50px;
@@ -46,20 +46,21 @@ nav {
   text-transform: uppercase;
   color: whitesmoke;
   background-color: #0095c8;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .contact-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 0%;
   height: 100%;
   background-color: #feb404;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
 }
 
@@ -69,7 +70,6 @@ nav {
     width: 100%;
   }
 }
-
 
 /* HOME PAGE */
 .home-header .home-left,
@@ -103,7 +103,7 @@ nav {
   align-items: center;
   width: 100%;
   height: 95vh;
-  background-image: url('/public/images/home.jpeg');
+  background-image: url("/images/home.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,7 +153,7 @@ nav {
   width: 35%;
   height: 80%;
   border-radius: 50%;
-  background-image: url(/public/images/home_welcome.jpeg);
+  background-image: url('/images/home_welcome.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -192,21 +192,21 @@ nav {
   font-size: 14px;
   background-color: #0095c8;
   border-radius: 20px;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .contact-us .contact-us-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
   background-color: #feb404;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
 }
 
@@ -223,7 +223,11 @@ nav {
   height: 40vh;
 }
 
-.icons .students, .staff, .nationalities, .educators, .ratio {
+.icons .students,
+.staff,
+.nationalities,
+.educators,
+.ratio {
   width: 20%;
   height: 100%;
 }
@@ -249,8 +253,8 @@ nav {
 }
 
 .ratio {
-   background-color: #366e83;
-   padding-top: 40px;
+  background-color: #366e83;
+  padding-top: 40px;
 }
 
 /* ABOUT PAGE */
@@ -260,7 +264,7 @@ nav {
   align-items: center;
   width: 100%;
   height: 95vh;
-  background-image: url(/public/images/about.jpeg);
+  background-image: url('/images/about.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -300,7 +304,7 @@ nav {
   height: 80%;
   margin: 25px 150px;
   border-radius: 50%;
-  background-image: url(/public/images/principal.jpeg);
+  background-image: url('/images/principal.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -336,21 +340,21 @@ nav {
   text-align: center;
   font-weight: 300;
   color: white;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .about-principal .principal-right .button::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
   background-color: #feb404;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
 }
 
@@ -372,7 +376,7 @@ nav {
 .experience-left {
   width: 50%;
   height: 100%;
-  padding:0 30px;
+  padding: 0 30px;
 }
 
 .experience-left h2 {
@@ -383,7 +387,7 @@ nav {
 .experience-right {
   width: 50%;
   height: 100%;
-  background-image: url(/public/images/school.jpeg);
+  background-image: url('/images/school.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -400,7 +404,7 @@ nav {
 .deputy-container .deputy-left {
   width: 50%;
   height: 100%;
-  background-image: url(/public/images/deputy.jpeg);
+  background-image: url('/images/deputy.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -438,7 +442,7 @@ nav {
   align-items: center;
   width: 100%;
   height: 95vh;
-  background-image: url(/public/images/curriculumn.jpeg);
+  background-image: url('/images/curriculumn.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -483,7 +487,7 @@ nav {
   border-right-color: #ffff;
   border-top-color: #e06287;
   border-bottom-color: #0095c8;
-  background-image: url(/public/images/junior.jpeg);
+  background-image: url('/images/junior.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -505,7 +509,7 @@ nav {
   border-right-color: #feb404;
   border-top-color: #0095c8;
   border-bottom-color: #e06287;
-  background-image: url(/public/images/senior.jpeg);
+  background-image: url('/images/senior.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -534,7 +538,7 @@ nav {
   color: white;
   background-color: #0095c8;
   border-radius: 30px;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -542,14 +546,14 @@ nav {
 
 .junior-container .junior-left .button::before,
 .senior-container .senior-right .button::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
   background-color: #feb404;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
 }
 
@@ -582,7 +586,7 @@ nav {
 
 .grid-item-1 {
   grid-area: 5 / 1 / 9 / 3;
-  background-image: url(/public/images/image5.jpg);
+  background-image: url('/images/image5.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -595,14 +599,14 @@ nav {
 }
 .grid-item-4 {
   grid-area: 1 / 3 / 5 / 5;
-  background-image: url(/public/images/home1.jpg);
+  background-image: url('/images/home1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .grid-item-5 {
   grid-area: 5 / 5 / 9 / 7;
-  background-image: url(/public/images/image2.jpg);
+  background-image: url('/images/image2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -615,7 +619,7 @@ nav {
 }
 .grid-item-8 {
   grid-area: 1 / 7 / 5 / 9;
-  background-image: url(/public/images/image3.jpg);
+  background-image: url('/images/image3.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -638,7 +642,7 @@ nav {
   align-items: center;
   width: 100%;
   height: 95vh;
-  background-image: url(/public/images/careers.jpeg);
+  background-image: url('/images/careers.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -663,7 +667,7 @@ nav {
   height: 80%;
   border-radius: 50%;
   margin: 40px 100px;
-  background-image: url(/public/images/millicent.jpg);
+  background-image: url('/images/millicent.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -687,7 +691,7 @@ nav {
 }
 
 .millicent-container .millicent-right p {
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .others-container {
@@ -700,11 +704,10 @@ nav {
   display: flex;
   width: 50%;
   height: 100%;
-  background-image: url(/public/images/Hanna.jpg);
+  background-image: url('/images/Hanna.jpg');
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
-
 }
 
 .others-container .others-left .others-left-left {
@@ -722,7 +725,7 @@ nav {
   display: flex;
   width: 50%;
   height: 100%;
-  background-image: url(/public/images/Tuuli.jpg);
+  background-image: url('/images/Tuuli.jpg');
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -771,7 +774,7 @@ nav {
   padding: 10px 20px;
   background-color: #0095c8;
   color: white;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -783,14 +786,14 @@ nav {
 
 .others-container .others-left .others-left-right .button::before,
 .others-container .others-right .others-right-right .button::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
   background-color: #feb404;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
 }
 
@@ -822,21 +825,21 @@ nav {
   text-align: center;
   font-size: 15px;
   font-weight: 200;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .opportunities-container .vacancies::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
   background-color: #feb404;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
 }
 
@@ -847,7 +850,6 @@ nav {
   }
 }
 
-
 /* CONTACT PAGE */
 .contact-header {
   display: flex;
@@ -855,7 +857,7 @@ nav {
   align-items: center;
   width: 100%;
   height: 95vh;
-  background-image: url(/public/images/contact.jpeg);
+  background-image: url('/images/contact.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -870,7 +872,7 @@ nav {
 }
 
 .form-div .p {
-  padding: 50px 120px;;
+  padding: 50px 120px;
   font-size: 18px;
   font-weight: bold;
   color: #004c65;
@@ -945,21 +947,21 @@ nav {
   color: white;
   text-align: center;
   font-size: 14px;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .form-right .button::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
   background-color: #feb404;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
 }
 
@@ -968,6 +970,14 @@ nav {
   &::before {
     width: 100%;
   }
+}
+
+.form-right p {
+  padding: 10px 20px;
+  margin-top: 12px;
+  background-color: #afe1af;
+  text-align: center;
+  color: green;
 }
 
 .map-area {
@@ -982,12 +992,17 @@ nav {
   padding: 0px 60px;
 }
 
-.footer-container .socials, .about, .curriculumn, .contact {
+.footer-container .socials,
+.about,
+.curriculumn,
+.contact {
   width: 25%;
   height: 100%;
 }
 
-.footer-container .about, .curriculumn, .contact {
+.footer-container .about,
+.curriculumn,
+.contact {
   text-align: center;
   padding-top: 50px;
 }
@@ -1003,20 +1018,24 @@ nav {
   gap: 12px;
 }
 
-
-.about h3, .curriculumn h3, .contact h3 {
+.about h3,
+.curriculumn h3,
+.contact h3 {
   font-family: "Philosopher", sans-serif;
   font-size: 20px;
   margin-bottom: 8px;
 }
 
-.about a, .curriculumn a, .contact p {
+.about a,
+.curriculumn a,
+.contact p {
   color: #828282;
 }
 
-
 /* PRINCIPALS BIOGRAPHY PAGE */
-.principal-page {
+.principal-page,
+.hanna-page,
+.tuuli-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1025,25 +1044,33 @@ nav {
   margin-bottom: 650px;
 }
 
-.principal-bio {
+.principal-bio,
+.hanna-bio,
+.tuuli-bio {
   width: 80%;
   height: 100%;
   padding: 20px 0;
   margin-top: 220px;
 }
 
-.principal-bio h1 {
+.principal-bio h1,
+.hanna-bio h1,
+.tuuli-bio h1 {
   text-align: center;
   font-family: "Philosopher", sans-serif;
   font-size: 35px;
 }
 
-.principal-bio .bio {
+.principal-bio .bio,
+.hanna-bio .bio,
+.tuuli-bio .bio {
   text-align: center;
   padding: 10px 270px;
 }
 
-.principal-bio hr {
+.principal-bio hr,
+.hanna-bio hr,
+.tuuli-bio hr {
   width: 100%;
   height: 3px;
   border: none;
@@ -1052,7 +1079,9 @@ nav {
   background-color: #366e83;
 }
 
-.principal-profile {
+.principal-profile,
+.hanna-profile,
+.tuuli-profile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1069,12 +1098,50 @@ nav {
   border-radius: 50%;
 }
 
+.hanna-profile .profile-left {
+  width: 30%;
+  height: 90%;
+  margin-bottom: 120px;
+  background-color: #e06287;
+  border-radius: 50%;
+}
+
+.tuuli-profile .profile-left {
+  width: 30%;
+  height: 90%;
+  margin-bottom: 120px;
+  background-color: #0095c8;
+  border-radius: 50%;
+}
+
 .principal-profile .profile-right {
   width: 30%;
   height: 90%;
   margin-left: -240px;
   border-radius: 50%;
-  background-image: url('/public/images/principal.jpeg');
+  background-image: url("/images/principal.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hanna-profile .profile-right {
+  width: 30%;
+  height: 90%;
+  margin-left: -240px;
+  border-radius: 50%;
+  background-image: url("/images/Hanna.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tuuli-profile .profile-right {
+  width: 30%;
+  height: 90%;
+  margin-left: -240px;
+  border-radius: 50%;
+  background-image: url("/images/Tuuli.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1096,3 +1163,82 @@ nav {
 }
 
 /* VACANCIES */
+.vacancy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 95vh;
+}
+
+.vacancy-content {
+  width: 70%;
+  height: 80%;
+  margin-top: 60px;
+}
+.vacancy-content h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.vacancy-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-principal .principal-right .button:hover {
+  color: white;
+  &::before {
+    width: 100%;
+  }
+}
+
+.vacancy-link .link {
+  display: inline-block;
+  padding: 14px 30px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  background-color: #e06287;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.vacancy-link .link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #a22c4e;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.vacancy-link .link:hover {
+  color: white;
+  &::before {
+    width: 100%;
+  }
+}
+
+.vacancy-image {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vacancy-image div {
+  width: 90%;
+  height: 100%;
+  background-image: url("/images/vacancy.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

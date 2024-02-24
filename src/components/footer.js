@@ -70,7 +70,7 @@ export default function Footer() {
             <a href="/principal">Meet Our Principal</a>
           </li>
           <li>
-            <a href="/">Meet Our Deputy</a>
+            <a href="/about">Meet Our Deputy</a>
           </li>
         </ul>
       </div>
@@ -78,13 +78,13 @@ export default function Footer() {
         <h3>Curriculumn</h3>
         <ul>
           <li className="mb-1">
-            <a href="/">Junior School</a>
+            <a href="/junior">Junior School</a>
           </li>
           <li className="mb-1">
-            <a href="/">Senior School</a>
+            <a href="/senior">Senior School</a>
           </li>
           <li>
-            <a href="/">A Typical Day</a>
+            <a href="/curriculumn">A Typical Day</a>
           </li>
         </ul>
       </div>

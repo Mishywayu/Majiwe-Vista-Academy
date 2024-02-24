@@ -10,6 +10,10 @@ import Contact from "./contact";
 import Footer from "./components/footer";
 import Principal from "./components/principal";
 import Vacancies from "./components/vacancies";
+import Hanna from "./components/hanna";
+import Tuuli from "./components/tuuli";
+import Junior from "./components/junior";
+import Senior from "./components/senior";
 
 export default function App() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -44,7 +48,11 @@ export default function App() {
             </svg>
           </button>
           {/* MENU ITEMS */}
-          <ul className={`flex space-x-7 text-sm menu ${menuVisible ? "menu-visible" : ""}`}>
+          <ul
+            className={`flex space-x-7 text-sm menu ${
+              menuVisible ? "menu-visible" : ""
+            }`}
+          >
             <li className="pt-2 text text-home">
               <Link to="/">HOME</Link>
             </li>
@@ -71,6 +79,10 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/principal" element={<Principal />} />
           <Route path="/vacancies" element={<Vacancies />} />
+          <Route path="/hanna" element={<Hanna />} />
+          <Route path="/tuuli" element={<Tuuli />} />
+          <Route path="/junior" element={<Junior />} />
+          <Route path="/senior" element={<Senior />} />
         </Routes>
       </Router>
 
