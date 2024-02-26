@@ -12,12 +12,12 @@ export default function Contact() {
 
     const userName = form.elements["user_name"].value;
     const userEmail = form.elements["user_email"].value;
-    const userMessage = form.elements["user_message"].value;
+    const userMessage = form.elements["message"].value;
 
     const templateParams = {
       user_name: userName,
       user_email: userEmail,
-      user_message: userMessage,
+      message: userMessage,
     };
 
     emailjs
@@ -93,7 +93,7 @@ export default function Contact() {
 
               <div className="message pt-2">
                 <label>Message*</label>
-                <textarea name="user_message" required></textarea>
+                <textarea name="message" required></textarea>
               </div>
               <button className="button rounded-3xl" type="submit" value="Send">
                 Send Message
